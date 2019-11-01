@@ -39,14 +39,18 @@
 
 <script>
 import { Vue, Component } from 'vue-property-decorator';
+import users from '@/store/modules/users';
 
 @Component
-export default class extends Vue {
+export default class Login extends Vue {
   email = ''
   password = ''
 
   login(){
-    console.log(`login with email =  ${this.email}`)
+    users.login({
+      email: this.email,
+      password: this.password
+    })
   }
 }
 </script>

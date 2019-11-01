@@ -8,3 +8,10 @@
       </div>
     </footer>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+
+export default class AppFooter extends Vue {
+
+}
+</script>
